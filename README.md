@@ -1,8 +1,13 @@
 ﻿##Toos Chamani Company
 
-Website  ===> tooschamani.ir
+Website : tooschamani.ir
 
-Member of Group:
-  - Mostafa Rahmati
-  - Amin Rahkan
-  - Masoud Salman
+Design Idea: WWW.MakeColor.in  
+
+Members :
+
+  - Mostafa Rahmati (Managment)
+  - Amin Rahkan 	(Data & Code Dev)	
+  - Masoud Salman	(Code Dev)
+  
+  
