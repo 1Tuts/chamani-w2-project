@@ -4,11 +4,39 @@ body{
 .veiw{
 	height:640px;
 	background-color:#033;
+	position:relative;
 }
 .scroll{
-	width:2900px;/*w24*3 = 2850 */
-	height:inherit;
+	width:2850px;/*w24*3 = 2850 */
+	position:absolute;
+	left: -950px;
+	top:0;
 }
 .scroll > div{
-	height:inherit;	 
+	height:inherit;
+}
+.home {
+	height:640px;
+	background-color:#060;
+}
+.decide {
+	height:300px;
+	margin-top:200px;
+	background-color:#036;
+}
+.back {
+	background-color:#CC6600;
+}
+.next {
+	background-color:#6CC;
+}
+.mid {
+	background-color:#C00;
+}
+
+.lft{
+	background-color:#663300;
+}
+.rgt{
+	background-color:#60f;
 }
