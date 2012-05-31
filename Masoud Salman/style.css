@@ -5,17 +5,16 @@ body{
 	height:640px;
 	background-color:#033;
 	position:relative;
+	/*overflow:hidden;*/
 }
 .scroll{
 	width:2850px;/*w24*3 = 2850 */
 	position:absolute;
 	left: -950px;
 	top:0;
-	-webkit-transition:left 2s;
+	/*-webkit-transition:left 2s;*/
 }
-.scroll > div{
-	height:inherit;
-}
+
 .home {
 	height:640px;
 	background-color:#060;
