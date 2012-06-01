@@ -1,0 +1,67 @@
+@font-face {
+	font-family: 'farsi';
+	src: url('font/BKoodakBold.eot');
+	src: url('font/BKoodakBold.eot?#iefix') format('eot'),
+		 url('font/BKoodakBold.woff') format('woff'),
+		 url('font/BKoodakBold.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+* {
+	margin:0;
+	padding:0;
+	outline:0;
+	border:0;
+	font-size:100%;
+	font:inherit;
+}
+li, ul, li {
+	list-style:none;
+}
+a {
+	text-decoration:none;
+	color:inherit;
+	cursor:pointer;
+	display:inline-block;
+}
+.hide {
+	display:none;
+	visibility:hidden;
+}
+.clear {
+	width:0px !important;
+	height:0 !important;
+	clear:both;
+	overflow:hidden;
+}
+input{
+	display:block;
+	margin-bottom:5px;
+	font-size:14px;
+}
+body {
+	direction:rtl;
+	background:#5f98d8;
+	font-family:Tahoma, Arial, "Times New Roman", Times, serif;
+	font-size:11px;
+}
+div.main{
+	width:980px;
+	margin: 0 auto;
+}
+div.bg{
+	position : fixed;
+	left     : 0;
+	right    : 0;
+	top      : 0;
+	bottom   : 0;
+	z-index  : -1;
+	background-image    : url('./images/bg.jpg');
+	background-repeat   : no-repeat;
+	background-size     : cover;
+	background-position : center top;
+}
+div{
+	/*outline:1px dashed red;*/
+}
