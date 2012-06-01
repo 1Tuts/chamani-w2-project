@@ -1,3 +1,4 @@
 ﻿My Log :
 
 1- man dar tarikh 12 khordadr file "intro" ro sakhtam.
+2- dar tarikh 13 khordadr file "home-top menu" ro sakhtam.
