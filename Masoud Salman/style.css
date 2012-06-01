@@ -5,7 +5,7 @@ body{
 	height:640px;
 	background-color:#033;
 	position:relative;
-	/*overflow:hidden;*/
+	overflow-x:hidden;
 }
 .scroll{
 	width:2850px;/*w24*3 = 2850 */
