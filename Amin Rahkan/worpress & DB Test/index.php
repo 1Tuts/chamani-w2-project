@@ -28,6 +28,7 @@ get_header();
   <?php
 	require_once('db.php');
 	db_connect();
+	mysql_query('SET NAMES utf8');
 	$arr = db_getrows('product');
 	
 
