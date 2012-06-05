@@ -50,7 +50,7 @@ foreach($rows as $row)
 			echo '</div>';
 			echo '<div class="txt">';
 				foreach($row as $title=>$fields)
-					if($title!='img' && $title!='id')
+					if($title!='image' && $title!='id')
 				echo "<p>$title : $fields</p>";	
 			echo '</div>';
 	echo '</div>';
@@ -82,18 +82,3 @@ function show_table($rows){
 
 	echo '</table>';
 }
-/*
-$arr = array(1,2);
-list($a,$b) = $arr; // $a=1, $b=2
-
-$arr2 = array('fname' => 'ali');
-$test = each($arr2); // array(0=>'fname',1=>'ali')
-
-list($a,$b) = each($arr2); // $a='fname'. $b='ali';
-*/
-
-/*
-while(list($title,$fields) = each($rows[0])){ //foreach($rows[0] as $title=>$fields){
-	echo "<th>$title</th>";
-}
-*/
