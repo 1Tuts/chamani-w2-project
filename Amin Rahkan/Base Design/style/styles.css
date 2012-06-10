@@ -1,0 +1,120 @@
+@charset "utf-8";
+/* CSS Document */
+* {
+	margin:0;
+	padding:0;
+}
+div.Container {
+	width:1290px;
+	margin:0 auto;
+	padding-top:1px;
+}
+div.Pages {
+	width:1290px;
+	height:680px;
+	overflow:hidden;
+	position:relative;
+}
+div.Scrool3 {
+	position:absolute;
+	width:4000px;
+	height:inherit;
+	left:-1290px;
+	top:0;
+	-webkit-transition-property:all;
+	-webkit-transition-duration:1500ms;
+	-webkit-transition-timing-function:cubic-bezier(0, 0.7, 0.3, 1);
+}
+div.Scrool6 {
+	position:absolute;
+	width:1290px;
+	height:4200px;
+	-webkit-transition-property:all;
+	-webkit-transition-duration:1500ms;
+	-webkit-transition-timing-function:cubic-bezier(0, 0.7, 0.3, 1);
+}
+div.EnPage {
+	width:1290px;
+	height:inherit;
+	background-color:#FFF; /*sefid*/
+	background:url(../images/FI036256.png) no-repeat;
+	float:left;
+}
+div.HomePage {
+	width:1290px;
+	height:inherit;
+	background-color:#000;/*siah*/
+	float:left;
+}
+div.FrPage {
+	position:relative;
+	width:1290px;
+	height:inherit;
+	background-color:#090;/*sabz*/
+	float:left;
+	-webkit-transition-property:all;
+	-webkit-transition-duration:800ms;
+	-webkit-transition-timing-function:cubic-bezier(0, 0.7, 0.3, 1);
+}
+div.Home {
+	width:1290px;
+	height:680px;
+	background-color:#0000FF;  /*abi*/
+}
+div.Portfolio {
+	background-color:#060; /*sabz*/
+}
+div.Gallery {
+	background-color:#F00; /*ghermez*/
+}
+div.About {
+	background-color:#FF0; /*zard*/
+}
+div.Contact {
+	background-color:#90C;/*banafsh*/
+}
+div.Blog {
+	background-color:#666; /*toosi*/
+}
+div.Header {
+	width:inherit;
+	height:100px;
+}
+div.HeaderContent {
+	width:inherit;
+	height:60px;
+}
+div.Menu {
+	width:inherit;
+	height:40px;
+	border:solid 1px #000;
+}
+div.Content {
+	width:inherit;
+	height:530px;
+}
+div.Footer {
+	width:inherit;
+	height:50px;
+	border:solid 1px #000;
+}
+.English {
+	margin-top:550px;
+	margin-left:600px;
+}
+ul.SiteMenu {
+	margin-right:100px;
+}
+ul.SiteMenu li {
+	float:right;
+	list-style-type:none;
+	padding-right:20px;
+}
+ul.SiteMenu li a {
+	text-decoration:none;
+	display:block;
+	margin-top:5px;
+}
+ul.SiteMenu li a:hover {
+	cursor:pointer;
+}
