@@ -1,0 +1,106 @@
+div.top{
+	width:500px;
+	height:500px;
+	margin:-440px auto 0 auto;
+	position:relative;
+	/*z-index:555;
+	top:-440px;*/
+}
+div.top .circle-one{
+	width:480px;
+	height:480px;
+	background:#eff1e9;
+	border-radius:0 0 250px 250px;
+	padding: 15px;
+	margin: 0 auto;
+	overflow: hidden;
+}
+div.circle-one .circle-two{
+	width:260px;
+	height:260px;
+	background:#ffffff;
+	border-radius:0 0 240px 240px;
+	padding: 110px;
+}
+div.circle-two .circle-three{
+	width:140px;
+	height:140px;
+	background:#f5f5f5;
+	border-radius:140px;
+	position: relative;
+	margin: 0 auto;
+	padding: 60px;
+}
+div.circle-three .text{
+	padding-top:100px;
+}
+div.circle-three p{
+	text-align:center;
+	color: #000000;
+	font-weight: bold;
+	padding: 10px 0 5px 0;
+	
+}
+div.circle-three p#fa, div.circle-three p#about, div.circle-three p#en{
+	color: #f1efd6;
+	font-weight: normal;
+	font-size:16px;
+	font-family:'farsi', Tahoma, Arial, "Times New Roman", Times, serif;;
+	padding: 1px 22px !important;
+	background: #ff4e00;
+	margin-right:15px;
+	border:1px solid #d24000;
+	border-radius:5px;
+	-moz-border-radius:5px;
+	-webkit-border-radius:5px;
+	white-space: nowrap;
+	display: none;
+}
+div.circle-three p#about{
+	margin-right:22px;
+}
+div.circle-three img{
+	width:8px;
+	height:11px;
+	display: block;
+	padding:2px 0 5px 0;
+	margin: 0 auto;
+}
+.text2{
+	padding-top:110px;
+}
+div.circle-three .button > div{
+	width:91px;
+	height:0;
+	overflow: hidden;
+	display: block;
+	cursor: pointer;
+	position: absolute;
+	z-index: 5;
+}
+div.button .fa{
+	background:url('./images/fa.png') 0 0 no-repeat;
+	top:220px;
+	right:-40px;
+}
+div.button .fa:hover{
+	background:url('./images/fa.png') 0 -93px no-repeat;
+}
+div.button .en{
+	background:url('./images/en.png') 0 0 no-repeat;
+	top:220px;
+	left:-40px;
+}
+div.button .en:hover{
+	background:url('./images/en.png') 0 -92px no-repeat;
+}
+div.button .about{
+	background:url('./images/about.png') 0 0 no-repeat;
+	top:270px;
+	right:0;
+	left:0;
+	margin: 0 auto;
+}
+div.button .about:hover{
+	background:url('./images/about.png') 0 -92px no-repeat;
+}

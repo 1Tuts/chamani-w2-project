@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <link  href="css/reset.css" rel="stylesheet" type="text/css"/>
+    <link  href="css/style.css" rel="stylesheet" type="text/css"/>
+    <link type="text/css" href="css/mcustomscrollbar.css" rel="stylesheet" />
+    <script type="text/javascript" src="js/jquery.js"></script>
+    <script type="text/javascript" src="js/jqueryui.js"></script>
+    <script type="text/javascript" src="js/jeasing.js"></script>
+    <script type="text/javascript" src="js/jmwheel.js"></script>
+    <script type="text/javascript" src="js/mscroll.js"></script>
+    <script>
+        $(window).load(function() {
+            mCustomScrollbars();
+        });
+
+        function mCustomScrollbars(){
+            /* 
+            malihu custom scrollbar function parameters: 
+            1) scroll type (values: "vertical" or "horizontal")
+            2) scroll easing amount (0 for no easing) 
+            3) scroll easing type 
+            4) extra bottom scrolling space for vertical scroll type only (minimum value: 1)
+            5) scrollbar height/width adjustment (values: "auto" or "fixed")
+            6) mouse-wheel support (values: "yes" or "no")
+            7) scrolling via buttons support (values: "yes" or "no")
+            8) buttons scrolling speed (values: 1-20, 1 being the slowest)
+            */
+            $("#mcs2_container").mCustomScrollbar("vertical",0,"easeOutCirc",1.05,"auto","yes","no",0); 
+        }
+
+        /* function to fix the -10000 pixel limit of jquery.animate */
+        $.fx.prototype.cur = function(){
+            if ( this.elem[this.prop] != null && (!this.elem.style || this.elem.style[this.prop] == null) ) {
+              return this.elem[ this.prop ];
+            }
+            var r = parseFloat( jQuery.css( this.elem, this.prop ) );
+            return typeof r == 'undefined' ? 0 : r;
+        }
+
+        /* function to load new content dynamically */
+        function LoadNewContent(id,file){
+            $("#"+id+" .customScrollBox .content").load(file,function(){
+                mCustomScrollbars();
+            });
+        }
+    </script>
+</head>
+
+<body>
+    <div class="Container">
+        <div class="ColLeft">
+            <div class="Header">
+                <div class="HeaderTop">
+              
+                  
+                   
+                </div>
+                <!-- HeaderTop -->
+                <div class="HeaderMenu">
+                    <ul class="Menu">
+                        <li><a href="#">صفحه نخست</a></li>
+                        <li><a href="#">صفحه اصلی</a></li>
+                        <li><a href="#">درباره ما</a></li>
+                        <li><a href="#">معرفی محصولات</a></li>
+                        <li><a href="#">تماس با ما</a></li>
+                    </ul>
+                </div>
+                <!-- HeaderMenu -->
+            </div>
+            <!-- Header -->
+            <div class="Content">
+                <div id="mcs2_container">
+                    <div class="customScrollBox">
+                        <div class="container">
+                            <div class="content">
+                                <h1 class="topText">Adjustable scroller height without easing</h1>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                                consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                                cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                                proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                                consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                                cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                                proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                                consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                                cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                                proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                                consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                                cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                                proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                                consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                                cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                                proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                                consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                                cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                                proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                                consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                                cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                                proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                                consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                                cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                                proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                                consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                                cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                                proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                                consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                                cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                                proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                                consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                                cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                                proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                            </div>
+                        </div>
+                        <div class="dragger_container" style="display: block; ">
+                            <div class="dragger ui-draggable" style="display: block; height: 356px; line-height: 356px; ">▒</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Content -->
+            <div class="Footer">
+            
+            	 <div class="FooterMenu">
+                    <ul class="FMenu">
+                        <li><a href="#">خانه</a></li>
+                        <li><a href="#">درباره ما </a></li>
+                        <li><a href="#">محصولات و خدمات</a></li>
+                        <li><a href="#">افتخارات ما </a></li>
+                        <li><a href="#">نظرات شما </a></li>
+                          <li><a href="#">ارتباط با ما </a></li>
+                         
+                    </ul>
+                </div>
+                <!-- HeaderMenu -->
+ 				<div class="CopyWrite">
+              
+                </div>
+            
+            </div>
+            <!-- Footer -->
+        </div>
+        <!-- ColLeft -->
+        <div class="ColRight">
+        
+        	
+        
+        </div>
+        <!-- ColRight -->
+    </div>
+    <!-- Container -->
+</body>
+</html>

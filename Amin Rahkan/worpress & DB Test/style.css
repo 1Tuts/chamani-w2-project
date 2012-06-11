@@ -1,0 +1,74 @@
+body{
+	
+	background:#CCC;
+	
+	
+	}
+.Container {
+	width:960px;
+	height:auto;
+	border:solid 1px #000000;
+	margin:0 auto;
+}
+.Header {
+	border:solid 1px #FF0000;
+}
+.Header_Content {
+	border:solid 1px #00FFFF;
+	height:100px;
+	width:auto;
+}
+.Header_Menu {
+	border:solid 1px #FFFF00;
+	height:50px;
+	width:auto;
+}
+.Content_Page {
+	border:solid 1px #0000FF;
+}
+.Content {
+	border:solid 1px #FF0000;
+	width:800px;
+	height:600px;
+	float:left;
+}
+.Sidebar_Right {
+	border:solid 1px #FF00FF;
+	width:159px;
+	height:600px;
+	margin-left:800px;
+}
+.Footer {
+	border:solid 1px #000000;
+	
+}
+.Footer_Menu {
+	border:solid 1px #FFFF00;
+	height:50px;
+	width:auto;
+}
+.Footer_Content {
+	border:solid 1px #00FFFF;
+	height:100px;
+	width:auto;
+}
+
+div.content .post{
+	text-align: justify; 
+	line-height: 1.7;
+	font-size: 15px;
+}
+
+.article{
+
+direction:rtl;
+text-align:right;
+}
+
+#postTitle{
+
+font-family:"Lucida Console", Monaco, monospace;
+font-size:24px;
+font-weight:bold;
+}
+
