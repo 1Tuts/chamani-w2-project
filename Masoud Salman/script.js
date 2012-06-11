@@ -16,8 +16,8 @@ $("div.next button").click(function(){
 	$(".scroll").animate({
 		'left':'-1900px'		
 		},700,function(){
-			$('.veiw').css('overflow-y','scroll');
-			$(".scroll .lft").animate({
+			//$('.veiw').css('overflow-y','scroll');
+			$(".scroll .rgt").animate({
 			'height':'1280px'
 			},2000);
 	});
@@ -28,8 +28,8 @@ $("div.back button").click(function()
 	$(".scroll").animate({
 		'left':'0'		
 		},700,function(){
-			$('.veiw').css('overflow-y','scroll');
-			$(".scroll .rgt").animate({
+			//$('.veiw').css('overflow-y','scroll');
+			$(".scroll .lft").animate({
 			'height':'1280px'
 			},2000);
 	});
