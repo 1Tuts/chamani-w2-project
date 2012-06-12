@@ -1,0 +1,22 @@
+<html>
+<head>
+<link type="text/css" rel="stylesheet" href="style.css"  />
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript">
+	$(function(){
+	var Pos_menu = null;
+	Pos_menu= parseInt($(".box").css("top").substring(0,$(".box").css("top").indexOf("px")));
+		$(window).scroll(function(){
+			var offset = Pos_menu + $(document).scrollTop()+"px";
+			$(".box").animate({top:offset},{duration:500,queue:false}); 
+		});	
+	});
+</script>
+<title>floting menu</title>
+</head>
+<body>
+<div class="cont">
+	<div class="box"></div>
+</div>
+</body>
+</html>
