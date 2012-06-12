@@ -14,3 +14,5 @@ This File IS For Log of My Works
 6.scrool sample for blog part
 
 7.create slidshow 
+
+8. new data added 
