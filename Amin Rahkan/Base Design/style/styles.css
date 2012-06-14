@@ -24,6 +24,12 @@ div.Scrool3 {
 	-webkit-transition-property:all;
 	-webkit-transition-duration:1500ms;
 	-webkit-transition-timing-function:cubic-bezier(0, 0.7, 0.3, 1);
+    -moz-transition-property:all;
+    -moz-transition-duration:1500ms;
+    -moz-transition-timing-function:cubic-bezier(0, 0.7, 0.3, 1);
+    -ms-transition-property:all;
+    -ms-transition-duration:1500ms;
+    -ms-transition-timing-function:cubic-bezier(0, 0.7, 0.3, 1);
 }
 div.Scrool6 {
 	position:absolute;
@@ -32,6 +38,12 @@ div.Scrool6 {
 	-webkit-transition-property:all;
 	-webkit-transition-duration:1500ms;
 	-webkit-transition-timing-function:cubic-bezier(0, 0.7, 0.3, 1);
+    -moz-transition-property:all;
+    -moz-transition-duration:1500ms;
+    -moz-transition-timing-function:cubic-bezier(0, 0.7, 0.3, 1);
+    -ms-transition-property:all;
+    -ms-transition-duration:1500ms;
+    -ms-transition-timing-function:cubic-bezier(0, 0.7, 0.3, 1);
 }
 div.EnPage {
 	width:1290px;
@@ -55,6 +67,12 @@ div.FrPage {
 	-webkit-transition-property:all;
 	-webkit-transition-duration:800ms;
 	-webkit-transition-timing-function:cubic-bezier(0, 0.7, 0.3, 1);
+    -moz-transition-property:all;
+    -moz-transition-duration:800ms;
+    -moz-transition-timing-function:cubic-bezier(0, 0.7, 0.3, 1);
+    -ms-transition-property:all;
+    -ms-transition-duration:800ms;
+    -ms-transition-timing-function:cubic-bezier(0, 0.7, 0.3, 1);
 }
 div.Home {
 	width:1290px;
