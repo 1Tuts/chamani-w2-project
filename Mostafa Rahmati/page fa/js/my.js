@@ -89,7 +89,15 @@ $(function(){
 		});
 	});
 
-
-
+/* /////////////////////////////////// Start page fa /////////////////////////////////// */
+	$(".menu #home-btn").click(function(){
+		$(".scroll .home_main").slideto({highlight: false,slide_duration: 2000});
+	});
+	$(".menu #product-btn").click(function(){
+		$(".scroll .product_main").slideto({highlight: false,slide_duration: 2000});
+	});
+	$(".menu #gallery-btn").click(function(){
+		$(".scroll .gallery_main").slideto({highlight: false,slide_duration: 2000});
+	});
 
 });/* end function */
