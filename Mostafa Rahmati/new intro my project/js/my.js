@@ -75,7 +75,7 @@ $(function(){
 			});
 		});
 	});
-	close_video.find('.close').click(function(){
+	function act(){
 		myVideo.pause();
 		$('.animate').stop().animate({'opacity' : '0'},500,null,function(){
 			overlay.stop().animate({'opacity' : '0'},300,null,function(){
@@ -87,9 +87,15 @@ $(function(){
 				overlay.css({'display' : 'none'});
 			});
 		});
+	}
+	close_video.find('.close').click(function(){
+		act();
+	});
+	$(document).keydown(function(e){
+		if ((e.keyCode ? e.keyCode : e.which)=="27"){
+			act();
+		}
 	});
 
-
-
-
+	
 });/* end function */
