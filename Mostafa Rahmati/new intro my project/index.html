@@ -10,15 +10,18 @@
 	<script type="text/javascript" src="./js/jquery.js"></script>
 	<!--[if !IE]> -->
 		<script type="text/javascript">
-			$(function(){$('.visible .loading').animate({'width':'980px','height':'300px'},400);});
-			window.onload=function(){
-				document.getElementById("preload").className = 'invisible';
-				$('.invisible .loading').animate({'width':'0px','height':'0px','opacity':'0.3'},500,null,function(){
-					$('.invisible').fadeOut(800,null,function(){
-						$('.invisible').css({'display':'none'});
+			$(function(){
+				$('.visible .loading').animate({'width':'980px','height':'300px'},400);
+			});
+			$(window).load(function(){
+				$('#preload').removeClass('visible').addClass('invisible');
+				$('.invisible .loading').animate({'width':'0px','height':'0px','opacity':'0.3'},500,null,
+					function(){
+						$('.invisible').fadeOut(800,null,function(){
+							$('.invisible').css({'display':'none'});
 						});
 					});
-				};
+			});
 		</script>
 	<!-- <![endif]-->
 </head>
@@ -94,7 +97,7 @@
 <!-- ///////////////////////////////////// Div Video ///////////////////////////////////// -->
 	<div class="video animate">
 		<div id="videoContent" class="animate">
-			<video width="620" height="339" controls="controls" poster="swf/intro.jpg" id="myvideo">
+			<video width="620" height="339" controls poster="swf/intro.jpg" id="myvideo">
 				<source src="swf/intro.mp4" type="video/mp4" />
 				<source src="swf/intro.webm" type="video/webm" />
 				<source src="swf/intro.ogv" type="video/ogg" />
