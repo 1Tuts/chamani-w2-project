@@ -1,0 +1,477 @@
+@charset "UTF-8";
+
+/*
+Web Master style sheet
+copyright webplicon.com 2011
+*/
+
+/* CSS Structure 
+(01) Reset 
+(02) Layout
+(03) Spritely jQuery plugin
+(04) jQuery Countdown 
+(05) jquery progression
+(06) Contact form
+(07) Newsletter subscription form
+(08) Social Icon
+(09) Index (Select theme page)
+/* ---------------------------------------------------------
+	(01) Reset
+------------------------------------------------------------*/
+html, body{
+	width:100%;
+	height:100%;
+	overflow: hidden;
+}
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+a { text-decoration: none;  margin: 0; padding: 0; font-size: 100%; vertical-align: baseline; background: transparent; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+ins {
+	text-decoration: none;
+}
+del {
+	text-decoration: line-through;
+}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+.clear { clear: both;}
+/* Meyer's reset ends here */
+
+/* ---------------------------------------------------------
+	(02) Layout
+------------------------------------------------------------*/
+body {
+	width: auto;
+	height: 100%;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 15px;
+	color: #474747;
+	line-height: 1.6em;
+	background: #a1e7ff;
+}
+a, a:visited {
+	color: #3a9bc7;
+	text-decoration: none;
+}
+a:hover {
+	text-decoration: underline;
+}
+h1, h2, h3, h4, h5 {
+	font-family: Arial, Helvetica, sans-serif;
+	color: #a1c117;
+}
+h2 {
+	padding: 10px 0 10px 0;
+	font-size: 34px; color: #e97917; font-weight: bold; text-align: center; line-height: 30px;
+}
+h3 {
+	font-size: 20px; color: #e97917; font-weight: bold; text-align: center;
+}
+a img {
+	border: 0;
+}
+ul {
+	padding-left: 40px;
+}
+
+
+#container  {
+	width:780px; 
+	margin: 0 auto; 
+}
+#mainContent {
+	z-index: 2000;
+	position: absolute; 
+	padding-top:70px;
+	width: 780px; margin-left: 0!important; margin-right: 0!important;
+	height: 520px;		
+}
+#content {
+	width: 550px;
+	padding: 50px 120px 80px 105px;
+	height: 530px;
+	background: url(../images/body.png) top no-repeat;
+	position: relative;
+}
+#compass { position: absolute;  top: 290px; right:60px;}
+#content p {
+	text-align: center !important; font-size: 14px; font-weight: 450; 
+	color: #6E6E6E;
+	padding: 5px;
+}
+#footer-wrap {
+	height: 930px; margin: 0 auto;
+	background: url(../images/foot-bg.jpg) bottom repeat-x;
+	z-index: 1000;
+	position: relative;
+	bottom: 0;
+}
+#fbody { 
+	margin: 0 auto; 
+	background: url(../images/mountain.png) bottom no-repeat;
+	z-index: 1000;
+	height:930px;
+	bottom: 0;
+}
+.panel {
+	margin-bottom: 2em;
+	display: none;
+}
+
+/* ---------------------------------------------------------
+	(03) Spritely jQuery plugin
+------------------------------------------------------------*/
+#stage {
+	top: 0px;
+	left: 0px;
+	z-index: 100;
+}
+.stage {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	min-width: 900px;
+	height: 100%;
+	overflow: hidden;
+}
+#bg {
+	background: #a1e7ff url(../images/top.jpg) repeat-x;
+}
+#clouds2 {
+	background: transparent url(../images/cloud-b.png) 20px 200px repeat-x;
+}
+#clouds1 {
+	background: transparent url(../images/cloud-a.png) repeat-x;
+}
+#sun {
+    left: 650px;
+	background: transparent url(../images/sun.png) 0 0 repeat-y;
+}
+
+/* ---------------------------------------------------------
+	(04) jQuery Countdown
+------------------------------------------------------------*/
+
+#countdown {
+	width: 540px;
+	background: url(../images/time_bg.png) top no-repeat;
+	height: 138px;
+	padding-top: 20px;
+	padding-left: 18px;
+}
+.countdown_rtl {
+	direction: rtl;
+}
+.countdown_row {
+	clear: both;
+	width: 100%;	
+}
+.countdown_section {
+	display: block;
+	width:110px;
+	float: left;
+	padding-top: 30px;
+	text-align: center;
+	background: url(../images/time.jpg) top no-repeat;
+	height:85px;
+	margin:0 10px 0 10px;	
+}
+.countdown_amount {
+	font-size:54px;
+	font-weight:bold;
+	color:#fff;
+}
+.count_titles {
+	margin-top:30px;
+	display:block;
+	font-size:13px;
+	font-weight:bold;
+	color:#6E6E6E;
+}
+
+/* ---------------------------------------------------------
+	(05) jquery progression
+------------------------------------------------------------*/
+#progress-box {
+	width: 540px;
+	background: url(../images/progress_bg.png) top no-repeat;
+	height: 110px;
+	padding-top: 15px;
+	margin: 0 auto;
+}
+#progress-bg {
+  	width: 500px;
+	height: 80px;
+	background: url(../images/bar-bg.jpg) top no-repeat;
+	margin: 0 auto;
+	padding-top: 16px;
+}
+#progress {}
+.progressbar {
+    border:1px solid #6c4511;
+    width: 470px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+	color: #333;
+	font-size: 24px;
+	margin: 0 auto;
+}
+
+/* ---------------------------------------------------------
+	(06) Contact form
+------------------------------------------------------------*/	
+#contact { 
+	position: absolute; display: block; 
+	width: 100px; height: 58px; top: 5px; right: 110px;
+	background: url(../images/contact.png) top left no-repeat;
+	text-indent: -9999px;
+	z-index: 4000;
+	}
+#contact:hover{ background: url(../images/contact_on.png) top left no-repeat; cursor: pointer; }	
+#exit a{ 
+	position: absolute;
+	bottom: 52px; right:60px;
+	width: 90px; height: 50px;
+	background: url(../images/exit.png) top left no-repeat;
+	text-indent: -9999px;
+}
+#exit a:hover { 
+	background: url(../images/exit_on.png) top right no-repeat; outline:none; 
+}
+
+/* Hides the whole contact form until needed */	
+#contactForm {
+ 	width: 440px; height: 370px;
+	background: url(../images/contact_bg.png) top left no-repeat; 
+	position: relative;
+	padding: 20px 20px 0 80px;
+	display:none;
+	margin-left: 6px;
+}   
+.name-missing { color: #F00;}
+/* Loading bar that will appear while the ajax magic is happening */
+.bar{
+	display:none; 
+	background:url(../images/ajax-loader.gif) no-repeat center; 
+	margin-top:100px; 
+	height:40px; width:230px;
+}
+	
+/* Hides the confirmation message until needed */	
+#messageSent { display: none;}
+
+/* This hides the form validation alert messages until needed */
+#contactForm span { 
+	display: none; 
+	font-size: 12px; 
+	line-height: 10px; 
+	padding-left: 6px;
+	font-weight: normal; 
+	color: #e33e18;
+}
+#contactForm p { padding: 0; margin: 0; text-align: left;}	
+		
+/* Form styling from here on out. There is nothing in here that you HAVE to use to get this to work */	
+#contactForm h3 { 
+	font-size: 20px;
+	color: #e97917;
+	font-weight: bold;
+	display: block;
+	margin:auto; left: -20px; position: relative; 
+	 
+}
+#contactForm textarea {
+	width: 374px; 
+	background: url(../images/textarea_bg.jpg) no-repeat top; 
+	color: #202020;  
+	height: 89px; 
+	line-height: 16px; 
+	font-size: 12px; 
+	padding: 3px 5px 3px 8px;
+	border: none;
+	overflow:hidden; outline:none;
+}
+#input_boxes { margin: 0 auto;}
+#contactForm input {
+	width: 374px; 
+	background: url(../images/input_bg.jpg) no-repeat top; 
+	color: #202020;  
+	height: 32px; 
+	line-height: 32px; 
+	font-size: 12px; 
+	padding: 3px 5px 3px 8px;
+	border: none;
+	outline:none;
+}
+#contactForm .submit {
+	border: none; 
+	background: url(../images/send.jpg) top left no-repeat; 
+	text-transform:uppercase; 
+	text-indent: -9999px;
+	height: 30px; width:96px; 
+	cursor: pointer; 
+	float: left; 
+}
+#contactForm .submit:hover { background: url(../images/send.jpg) top right no-repeat; }
+#contactForm label { padding-left: 4px; font-weight: bold;}
+#contactForm p { 
+	text-align: left !important; 
+	font-size: 13px; font-weight: bold; 
+	font-family : Arial, Helvetica, sans-serif; 
+	color: #6E6E6E;
+}
+#contactForm .input_boxes { float: left; width: 204px; }
+
+#dummycontent {padding-top:100px; height:600px; position:relative;}
+.bottomlink {position:absolute; bottom:0;}
+
+/*-------------------------------------------------------------
+	(07) Newsletter subscription form
+-------------------------------------------------------------*/	
+#action { 
+  	margin:0 auto; width: 375px;
+	height: 40px; position: relative;
+	display: block; 
+}
+#input {
+	width: 248px;
+	height: 40px;
+	padding: 0px 5px 8px 10px;
+	border: none;
+	background: url(../images/input_notify.jpg) top no-repeat;
+	font-size: 16px;
+	text-align: left;
+	float: left;
+	color: #666;
+	outline:none;
+	line-height: 25px;
+}
+
+#submit {
+	width: 122px;
+	height: 40px;
+	border: none;
+	margin-left: -10px;
+	background: url(../images/notify.png) bottom no-repeat;
+	color: #fff;
+	font-weight: bold;
+	text-indent: -999999px;
+	float:left;		
+}
+#submit:hover {
+	cursor:pointer;
+	background: url(../images/notify.png) top no-repeat;
+	text-indent: -99989px;
+}
+#formPopup {
+	background: url(../images/pop.png) top no-repeat;
+	font-size: 14px; 	
+	font-weight: bold;
+	color: #fff;
+	margin: auto;
+	padding-top: 16px;
+	text-align: center;
+	width: 460px;
+	height: 44px;
+	left: -40px;
+	position: relative;
+}
+#notify label.error {
+	bottom: -22px;
+	left: 10px;
+	color: red;									
+    display: block;
+    position: absolute;
+    font-size: 12px;		
+    white-space: nowrap;	
+}
+/*-------------------------------------------------------------
+	(08) Social Icon
+-------------------------------------------------------------*/
+#social {  margin: 30px auto; display: block; width: 200px;}
+#social ul { list-style: none; }	
+#social ul li { float: left; display: block; height: 30px; margin-right:10px; text-indent: -99999px; }
+#social a { width: 22px; height: 22px; display:block; text-indent: -9999px; }
+#social a.facebook { background: url(../images/facebook.jpg) top no-repeat;  }
+#social a.facebook:hover { background: url(../images/facebook.jpg) bottom no-repeat; }
+#social a.icontact { background: url(../images/email.jpg) top no-repeat;  }
+#social a.icontact:hover { background: url(../images/email.jpg) bottom no-repeat; }
+#social a.twitter { background: url(../images/twitter.jpg) top no-repeat;  }
+#social a.twitter:hover { background: url(../images/twitter.jpg) bottom no-repeat; }
+#social a.rss { background: url(../images/rss.jpg) top no-repeat;  }
+#social a.rss:hover { background: url(../images/rss.jpg) bottom no-repeat; }
+
+/*-------------------------------------------------------------
+	(09) Index (Select theme page)
+-------------------------------------------------------------*/
+#show {
+	margin: 0 auto;
+	width: 900px;
+	}
+#show-content {
+	margin: 0 auto; 
+	width: 880px; height: 460px;
+	z-index: 2000;
+	position: absolute;
+} 
+a#link1 {
+	display: block; width: 430px; height:331px; background-color: #F90; text-indent: -9999px;
+	background: url(../images/style1.png) top no-repeat; float:left; margin-top:40px;
+	cursor: pointer; 
+	}
+a#link2 {
+	display: block; width: 430px; height:331px; background-color: #F90; text-indent: -9999px; 
+	background: url(../images/style2.png) top no-repeat; float:right; margin-top: 40px;
+	cursor: pointer; 
+	}
+p.coppyright { font-size: 12px; text-align: center; color: #666; margin-top: 20px; }
+
+.hat{
+	width:200px;
+	height:160px;
+	margin:0 auto;
+}
