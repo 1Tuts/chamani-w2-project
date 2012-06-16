@@ -12,9 +12,9 @@
 								<li id="active" id="home-btn"><a href="#home">صفحه اصلی</a></li>
 								<li id="product-btn"><a href="#product">معرفی محصولات</a></li>
 								<li id="gallery-btn"><a href="#gallery">گالری عکس</a></li>
-								<li><a href="#">قرعه کشی</a></li>
-								<li><a href="#">وبلاگ</a></li>
-								<li><a href="#">تماس با ما</a></li>
+								<li><a href="#draw">قرعه کشی</a></li>
+								<li><a href="#blog">وبلاگ</a></li>
+								<li id="contactus-btn"><a href="#contact us">تماس با ما</a></li>
 							</ul>
 							<div class="clear"></div>
 						</div>
@@ -43,9 +43,9 @@
 								<li id="home-btn"><a href="#home">صفحه اصلی</a></li>
 								<li id="active" id="product-btn"><a href="#product">معرفی محصولات</a></li>
 								<li id="gallery-btn"><a href="#gallery">گالری عکس</a></li>
-								<li><a href="#">قرعه کشی</a></li>
-								<li><a href="#">وبلاگ</a></li>
-								<li><a href="#">تماس با ما</a></li>
+								<li><a href="#draw">قرعه کشی</a></li>
+								<li><a href="#blog">وبلاگ</a></li>
+								<li id="contactus-btn"><a href="#contact us">تماس با ما</a></li>
 							</ul>
 							<div class="clear"></div>
 						</div>
@@ -74,9 +74,9 @@
 								<li id="home-btn"><a href="#home">صفحه اصلی</a></li>
 								<li id="product-btn"><a href="#product">معرفی محصولات</a></li>
 								<li id="active" id="gallery-btn"><a href="#gallery">گالری عکس</a></li>
-								<li><a href="#">قرعه کشی</a></li>
-								<li><a href="#">وبلاگ</a></li>
-								<li><a href="#">تماس با ما</a></li>
+								<li><a href="#draw">قرعه کشی</a></li>
+								<li><a href="#blog">وبلاگ</a></li>
+								<li id="contactus-btn"><a href="#contact us">تماس با ما</a></li>
 							</ul>
 							<div class="clear"></div>
 						</div>
@@ -90,6 +90,33 @@
 				</div>
 			</div>
 		</div><!-- ///// end gallery_main ///// -->
+		<div class="clear"></div>
+		<div class="contactus_main border">
+			<div class="contactus_container container">
+				<div class="contactus">
+					<div class="header">
+						<?php include ("logo.php"); ?>
+						<div class="menu">
+							<ul>
+								<li id="home-btn"><a href="#home">صفحه اصلی</a></li>
+								<li id="product-btn"><a href="#product">معرفی محصولات</a></li>
+								<li id="gallery-btn"><a href="#gallery">گالری عکس</a></li>
+								<li><a href="#draw">قرعه کشی</a></li>
+								<li><a href="#blog">وبلاگ</a></li>
+								<li id="active" id="contactus-btn"><a href="#contact us">تماس با ما</a></li>
+							</ul>
+							<div class="clear"></div>
+						</div>
+					</div>
+					<div class="clear"></div>
+					<div class="padding">
+						<div class="slideshow">
+							<p>مکان قرارگیری فرم تماس با ما</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div><!-- ///// end contactus_main ///// -->
 
 
 

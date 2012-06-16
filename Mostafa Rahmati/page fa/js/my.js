@@ -107,5 +107,8 @@ $(function(){
 	$(".menu #gallery-btn").click(function(){
 		$(".scroll .gallery_main").slideto({highlight: false,slide_duration: 2000});
 	});
+	$(".menu #contactus-btn").click(function(){
+		$(".scroll .contactus_main").slideto({highlight: false,slide_duration: 2000});
+	});
 
 });/* end function */

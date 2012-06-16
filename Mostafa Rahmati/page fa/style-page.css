@@ -215,4 +215,37 @@ div.gallery_main .slideshow{
 	line-height:50px;
 	color: #00700d;
 }
+/* /////////////////////////////////// Div contactus_main /////////////////////////////////// */
+div.scroll .contactus_main{
+	background:url('./images/page/contactus-bg.jpg') center no-repeat;
+}
+div.contactus_main .header li{
+	border-top:1px solid #85c1e7;
+	border-left:1px solid #85c1e7;
+}
+div.contactus_main .header li:first-child{
+	border-right:1px solid #85c1e7;
+}
+div.contactus_main .header li a{
+	border-left:1px solid #2a6797;
+	text-shadow: 0px 1px 0px #0067aa;
+	-moz-text-shadow: 0px 1px 0px #0067aa;
+	-webkit-text-shadow: 0px 1px 0px #0067aa;
+	background:url('./images/page/bg-menu-contactus.png') #3d87c2 0 0 repeat-x;
+}
+div.contactus_main .header li:first-child a{
+	border-right:1px solid #2a6797
+}
+div.contactus_main .header li a:hover{
+	background:url('./images/page/bg-menu-contactus2.png') #3f7fc2 0 0 repeat-x;
+}
+div.contactus_main .padding{
+	padding-top: 250px;
+	padding-right: 200px;
+}
+div.contactus_main .slideshow{
+	font-size:45px !important;
+	line-height:50px;
+	color: #00700d;
+}
 
