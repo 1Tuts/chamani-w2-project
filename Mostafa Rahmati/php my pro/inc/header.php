@@ -2,7 +2,8 @@
 <html>
 <head>
 	<meta charset="utf-8">
-	<title>new intro my project</title>
+	<link rel="shortcut icon" href="images/favicon.png" type="image/x-icon" />
+	<title>خشكبار توس چمني</title>
 	<link rel="stylesheet" type="text/css" href="reset.css">
 	<link rel="stylesheet" type="text/css" href="lightbox.css">
 	<link rel="stylesheet" type="text/css" href="style-intro.css">
