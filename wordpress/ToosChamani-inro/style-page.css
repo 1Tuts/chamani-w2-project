@@ -1,0 +1,251 @@
+div.scrool .home_main > div div{
+	/*outline:1px solid red;*/
+}
+/* /////////////////////////////////// Div scroll all style /////////////////////////////////// */
+div.scroll{
+	width:100%;
+	height:890px;
+	position: absolute;
+	top:0;
+	bottom:0;
+	left:0;
+	right:0;
+}
+div.scroll > div{
+	width:auto;
+	height:880px;
+	overflow: hidden;
+}
+div.scroll .border{
+	border-top:2px dashed red;
+}
+div.scroll .border:first-child{
+	border-top:none;
+}
+div.scroll > div > .container{
+	margin: 0 auto;
+	width:980px;
+	overflow: hidden;
+}
+div.scroll > div > .container > div{
+	float: left;
+	padding:0;
+	margin:0;
+	width:980px;
+}
+div.header .logo{
+	padding-top:15px;
+	width:166px;
+	height:67px;
+	/*outline:1px solid red;*/
+}
+div.header .menu{
+	padding:56px 10px 0 0;
+	max-width:750px;
+	margin:0 0 0 200px;
+	font-family:'farsi', Tahoma, Arial, "Times New Roman", Times, serif;
+	font-size:16px;
+	/*outline:1px solid red;*/
+}
+div.header .menu li{
+	float: right;
+	overflow: hidden;
+}
+div.header .menu li a{
+	padding:10px 15px;
+	color: #ffffff;
+}
+div.header .menu li#active{
+	border:none;
+	margin-top:-4px;
+	position: relative;
+	z-index: 5;
+	border-radius:3px 3px 0 0;
+	-moz-border-radius:3px 3px 0 0;
+	-webkit-border-radius:3px 3px 0 0;
+	box-shadow:0px -1px 15px 1px #fff;
+	-moz-box-shadow:0px -1px 15px 1px #fff;
+	-webkit-box-shadow:0px -1px 15px 1px #fff;
+}
+div.scroll .padding{
+	width:550px;
+	padding:160px 0 0 0;
+	color: #f5ebe4;
+	float: right;
+	text-shadow:0 1px 1px #154100;
+	-webkit-text-shadow:0 1px 1px #154100;
+	font-family:'farsi', Tahoma, Arial, "Times New Roman", Times, serif;
+	line-height:27px;
+	font-size:18px;
+}
+div.scroll .text-fa{
+	float: right;
+}
+div.scroll .text-fa h2{
+	float: right;
+	padding:5px 15px;
+	margin:0;
+	clear: both;
+	border-radius:10px 10px 0 0;
+}
+div.scroll .text-fa p#txt{
+	float: right;
+	clear: both;
+	max-height:460px;
+	padding:7px 15px;
+	overflow: hidden;
+	border-radius:10px 0 10px 0;
+}
+div.scroll .text-fa p#more{
+	float: left;
+	clear: both;
+	padding:5px 15px 10px 15px;
+	border-radius:0 0 10px 10px;
+}
+div.scroll .text-fa a:hover{
+	color: #f6b9b1;
+}
+div.header .menu li#active a{
+	color: #454545;
+	padding:16px 22px;
+	background:#fff;
+	text-shadow:none !important;
+	border:none;
+	border-radius:3px 3px 0 0;
+	-moz-border-radius:3px 3px 0 0;
+	-webkit-border-radius:3px 3px 0 0;
+}
+div.header .menu li#active a:after{
+	border-left:none;
+}
+
+/* /////////////////////////////////// Div home_main /////////////////////////////////// */
+div.scroll .home_main{
+	background:url('./images/page/home-bg.jpg') center no-repeat;
+}
+div.home_main .header li{
+	border-top:1px solid #cbe386;
+	border-left:1px solid #cbe386;
+}
+div.home_main .header li:first-child{
+	border-right:1px solid #cbe386;
+}
+div.home_main .header li a{
+	border-left:1px solid #729318;
+	text-shadow: 0px 1px 0px #6b871e;
+	-moz-text-shadow: 0px 1px 0px #6b871e;
+	-webkit-text-shadow: 0px 1px 0px #6b871e;
+	background:url('./images/page/bg-menu-home.png') #8cb02f 0 0 repeat-x;
+}
+div.home_main .header li:first-child a{
+	border-right:1px solid #729318
+}
+div.home_main .header li a:hover{
+	background:url('./images/page/bg-menu-home2.png') #b59f1e 0 0 repeat-x;
+}
+div.home_main .text-fa h2, div.home_main .text-fa p{
+	background:rgb(0,0,92);
+	background:rgba(0,0,92,0.7);
+}
+/* /////////////////////////////////// Div product_main /////////////////////////////////// */
+div.scroll .product_main{
+	background:url('./images/page/product-bg.jpg') center no-repeat;
+}
+div.product_main .header li{
+	border-top:1px solid #45cec5;
+	border-left:1px solid #45cec5;
+}
+div.product_main .header li:first-child{
+	border-right:1px solid #45cec5;
+}
+div.product_main .header li a{
+	border-left:1px solid #0f7b74;
+	text-shadow: 0px 1px 0px #008b82;
+	-moz-text-shadow: 0px 1px 0px #008b82;
+	-webkit-text-shadow: 0px 1px 0px #008b82;
+	background:url('./images/page/bg-menu-product.png') #139088 0 0 repeat-x;
+}
+div.product_main .header li:first-child a{
+	border-right:1px solid #0f7b74
+}
+div.product_main .header li a:hover{
+	background:url('./images/page/bg-menu-product2.png') #0c895d 0 0 repeat-x;
+}
+div.product_main .text-fa h2, div.product_main .text-fa p{
+	background:rgb(67,0,92);
+	background:rgba(67,0,92,0.7);
+}
+div.product_main .padding{
+	padding-top: 250px;
+	float: left !important;
+}
+div.product_main p#txt{
+	max-height:379px !important;
+}
+/* /////////////////////////////////// Div gallery_main /////////////////////////////////// */
+div.scroll .gallery_main{
+	background:url('./images/page/gallery-bg.jpg') center no-repeat;
+}
+div.gallery_main .header li{
+	border-top:1px solid #e857c1;
+	border-left:1px solid #e857c1;
+}
+div.gallery_main .header li:first-child{
+	border-right:1px solid #e857c1;
+}
+div.gallery_main .header li a{
+	border-left:1px solid #891b58;
+	text-shadow: 0px 1px 0px #93006b;
+	-moz-text-shadow: 0px 1px 0px #93006b;
+	-webkit-text-shadow: 0px 1px 0px #93006b;
+	background:url('./images/page/bg-menu-gallery.png') #ae2471 0 0 repeat-x;
+}
+div.gallery_main .header li:first-child a{
+	border-right:1px solid #891b58
+}
+div.gallery_main .header li a:hover{
+	background:url('./images/page/bg-menu-gallery2.png') #a81f51 0 0 repeat-x;
+}
+div.gallery_main .padding{
+	padding-top: 250px;
+	padding-right: 200px;
+}
+div.gallery_main .slideshow{
+	font-size:45px !important;
+	line-height:50px;
+	color: #00700d;
+}
+/* /////////////////////////////////// Div contactus_main /////////////////////////////////// */
+div.scroll .contactus_main{
+	background:url('./images/page/contactus-bg.jpg') center no-repeat;
+}
+div.contactus_main .header li{
+	border-top:1px solid #85c1e7;
+	border-left:1px solid #85c1e7;
+}
+div.contactus_main .header li:first-child{
+	border-right:1px solid #85c1e7;
+}
+div.contactus_main .header li a{
+	border-left:1px solid #2a6797;
+	text-shadow: 0px 1px 0px #0067aa;
+	-moz-text-shadow: 0px 1px 0px #0067aa;
+	-webkit-text-shadow: 0px 1px 0px #0067aa;
+	background:url('./images/page/bg-menu-contactus.png') #3d87c2 0 0 repeat-x;
+}
+div.contactus_main .header li:first-child a{
+	border-right:1px solid #2a6797
+}
+div.contactus_main .header li a:hover{
+	background:url('./images/page/bg-menu-contactus2.png') #3f7fc2 0 0 repeat-x;
+}
+div.contactus_main .padding{
+	padding-top: 250px;
+	padding-right: 200px;
+}
+div.contactus_main .slideshow{
+	font-size:45px !important;
+	line-height:50px;
+	color: #00700d;
+}
+
