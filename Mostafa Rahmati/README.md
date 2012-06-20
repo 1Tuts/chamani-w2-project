@@ -8,7 +8,7 @@ Member of Group:
   - Masoud Salman
 
 
-60% of the project is done.
+65% of the project is done.
 
 Our website was updated, click on the link below to view.
 
@@ -16,3 +16,7 @@ http://tooschamani.ir/
 
 http://tooschamani.ir/pro/
 
+http://tooschamani.ir/end/
+
+
+end ==> the wordpress theme :tr
