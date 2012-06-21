@@ -20,9 +20,6 @@ $(function(){
 			$('.text2').stop().animate({'opacity': '1'},300);
 		});
 	});
-	top.find('p#fa').css({'opacity':'0'});
-	top.find('p#about').css({'opacity':'0'});
-	top.find('p#en').css({'opacity':'0'});
 
 	top.find('.fa').mouseover(function(){
 		top.find('p#fa').css({'display':'inline-block'});
