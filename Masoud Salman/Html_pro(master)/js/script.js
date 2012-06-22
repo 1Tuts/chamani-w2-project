@@ -38,7 +38,7 @@ $(function(){
 	var start_intro = $('.start-intro');
 	var close_video = $('.close-video')
 	var overlay = $('.overlay');
-	var myVideo=document.getElementById("myvideo"); 
+	var myVideo=document.getElementById("myvideo");
 	start_intro.click(function(){
 		overlay.css({'display' : 'block'});
 		overlay.stop().animate({'opacity' : '1'},300,null,function(){
@@ -77,17 +77,19 @@ $(function(){
 	});
 
 /* /////////////////////////////////// Start page fa /////////////////////////////////// */
-	$(".menu #home-btn").click(function(){
-		$(".scroll .home_main").slideto({highlight: false,slide_duration: 2000});
-	});
-	$(".menu #product-btn").click(function(){
-		$(".scroll .product_main").slideto({highlight: false,slide_duration: 2000});
-	});
-	$(".menu #gallery-btn").click(function(){
-		$(".scroll .gallery_main").slideto({highlight: false,slide_duration: 2000});
-	});
-	$(".menu #contactus-btn").click(function(){
-		$(".scroll .contactus_main").slideto({highlight: false,slide_duration: 2000});
-	});
+	$("#home-btn,#product-btn,#gallery-btn,#contactus-btn").click(function(){
 
+		if ($(this).attr("id")=='home-btn')
+			$(".scroll .home_main").slideto({highlight: false,slide_duration: 2000});
+
+		else if ($(this).attr("id")=='product-btn')
+			$(".scroll .product_main").slideto({highlight: false,slide_duration: 2000});
+
+		else if ($(this).attr("id")=='gallery-btn')
+			$(".scroll .gallery_main").slideto({highlight: false,slide_duration: 2000});
+
+		else
+			$(".scroll .contactus_main").slideto({highlight: false,slide_duration: 2000});
+
+	});
 });/* end function */
