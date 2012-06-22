@@ -290,7 +290,9 @@ div.close{
 div.close:hover{
 	background-position:0 -27px;
 }
-
-
-
-
+.width{
+	width:inherit;	
+}
+.height{
+	height:inherit;
+}
