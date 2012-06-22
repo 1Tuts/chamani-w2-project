@@ -60,7 +60,11 @@ div.circle-three p{
 	padding: 12px 0 5px 0;
 	
 }
+div.circle-three{
+	position:relative;	
+}
 div.circle-three p#fa, div.circle-three p#about, div.circle-three p#en{
+	position:absolute;
 	color: #f1efd6;
 	font-weight: normal;
 	font-size:14px;

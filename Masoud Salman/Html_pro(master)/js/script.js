@@ -20,35 +20,15 @@ $(function(){
 			$('.text2').stop().animate({'opacity': '1'},300);
 		});
 	});
-	top.find('p#fa').css({'opacity':'0'});
-	top.find('p#about').css({'opacity':'0'});
-	top.find('p#en').css({'opacity':'0'});
 
-	top.find('.fa').mouseover(function(){
-		top.find('p#fa').css({'display':'inline-block'});
-		top.find('p#fa').stop().animate({'opacity': '1'},800);
+	$(".fa ,.en ,.about").mouseover(function(){
+		console.log($(this).attr("class"));
+		top.find('p#'+$(this).attr("class")).css({'display':'inline-block'});
+		top.find('p#'+$(this).attr("class")).stop().animate({'opacity': '1'},800);
 	});
-	top.find('.fa').mouseout(function(){
-		top.find('p#fa').stop().animate({'opacity': '0'},50,null,function(){
-			top.find('p#fa').css({'display':'none'});
-		});
-	});
-	top.find('.about').mouseover(function(){
-		top.find('p#about').css({'display':'inline-block'});
-		top.find('p#about').stop().animate({'opacity': '1'},800);
-	});
-	top.find('.about').mouseout(function(){
-		top.find('p#about').stop().animate({'opacity': '0'},50,null,function(){
-			top.find('p#about').css({'display':'none'});
-		});
-	});
-	top.find('.en').mouseover(function(){
-		top.find('p#en').css({'display':'inline-block'});
-		top.find('p#en').stop().animate({'opacity': '1'},800);
-	});
-	top.find('.en').mouseout(function(){
-		top.find('p#en').stop().animate({'opacity': '0'},50,null,function(){
-			top.find('p#en').css({'display':'none'});
+	$(".fa ,.en ,.about").mouseout(function(){
+		top.find('p#'+$(this).attr("class")).stop().animate({'opacity': '0'},50,null,function(){
+			top.find('p#'+$(this).attr("class")).css({'display':'none'});
 		});
 	});
 
@@ -59,7 +39,6 @@ $(function(){
 	var close_video = $('.close-video')
 	var overlay = $('.overlay');
 	var myVideo=document.getElementById("myvideo"); 
-
 	start_intro.click(function(){
 		overlay.css({'display' : 'block'});
 		overlay.stop().animate({'opacity' : '1'},300,null,function(){
