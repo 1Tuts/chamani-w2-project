@@ -78,18 +78,18 @@ $(function(){
 
 /* /////////////////////////////////// Start page fa /////////////////////////////////// */
 	$("#home-btn,#product-btn,#gallery-btn,#contactus-btn").click(function(){
-
-		if ($(this).attr("id")=='home-btn')
-			$(".scroll .home_main").slideto({highlight: false,slide_duration: 2000});
-
-		else if ($(this).attr("id")=='product-btn')
-			$(".scroll .product_main").slideto({highlight: false,slide_duration: 2000});
-
-		else if ($(this).attr("id")=='gallery-btn')
-			$(".scroll .gallery_main").slideto({highlight: false,slide_duration: 2000});
-
-		else
-			$(".scroll .contactus_main").slideto({highlight: false,slide_duration: 2000});
-
+		switch($(this).attr("id")){
+			case 'home-btn':
+				$(".scroll .home_main").slideto({highlight: false,slide_duration: 2000});
+				break;
+			case 'product-btn':
+				$(".scroll .product_main").slideto({highlight: false,slide_duration: 2000});
+				break;
+			case 'gallery-btn':
+				$(".scroll .gallery_main").slideto({highlight: false,slide_duration: 2000});
+				break;
+			default:
+				$(".scroll .contactus_main").slideto({highlight: false,slide_duration: 2000});
+		}
 	});
 });/* end function */
