@@ -1,0 +1,228 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>new intro my project</title>
+	<link rel="stylesheet" type="text/css" href="reset.css">
+	<link rel="stylesheet" type="text/css" href="lightbox.css">
+	<link rel="stylesheet" type="text/css" href="style-intro.css">
+	<link rel="stylesheet" type="text/css" href="style-page.css">
+	<!--[if lte IE 8]><link rel="stylesheet" type="text/css" href="stupid-ie.css"><![endif]-->
+	<script type="text/javascript" src="./js/jquery.js"></script>
+	<!--[if !IE]> -->
+		<script type="text/javascript">
+			$(function(){
+				$('.visible .loading').animate({'width':'980px','height':'300px'},400);
+			});
+			$(window).load(function(){
+				$('#preload').removeClass('visible').addClass('invisible');
+				$('.invisible .loading').animate({'width':'0px','height':'0px','opacity':'0.3'},500,null,
+					function(){
+						$('.invisible').fadeOut(800,null,function(){
+							$('.invisible').css({'display':'none'});
+						});
+					});
+			});
+		</script>
+	<!-- <![endif]-->
+</head>
+<body>
+<!-- ///////////////////////////////////// Div Loading ///////////////////////////////////// -->
+	<div id="preload" class="visible">
+		<div class="loading">
+			<div class="swf">
+				<object classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=7,0,0,0" width="280" height="60">
+	  				<param name=movie value="swf/loading.swf" />
+	  				<param name="wmode" value="transparent" />
+	  				<param name="play" VALUE="true" />
+	  				<param name="loop" VALUE="true" />
+	  				<param name="menu" value="false" />
+	  				<param name="quality" value="best" />
+	  				<embed src="swf/loading.swf" quality="best" wmode="transparent" menu="false" pluginspage="http://www.macromedia.com/go/getflashplayer" type="application/x-shockwave-flash" width="280" height="60">
+	  				</embed>
+				</object>
+			</div>
+			<p>L o a d i n g . . .</p>
+		</div>
+	</div>
+
+
+
+<!-- ///////////////////////////////////// Div scrool ///////////////////////////////////// -->
+	<div class="scroll">
+		<div class="home_main border">
+			<div class="home_container container">
+				<div class="home">
+					<div class="header">
+						<div class="left logo">
+							<img src="./images/page/logo.png" alt="#">
+						</div>
+						<div class="menu">
+							<ul>
+								<li id="active" id="home-btn"><a href="#home">صفحه اصلی</a></li>
+								<li id="product-btn"><a href="#product">معرفی محصولات</a></li>
+								<li id="gallery-btn"><a href="#gallery">گالری عکس</a></li>
+								<li><a href="#draw">قرعه کشی</a></li>
+								<li><a href="#blog">وبلاگ</a></li>
+								<li id="contactus-btn"><a href="#contact us">تماس با ما</a></li>
+							</ul>
+							<div class="clear"></div>
+						</div>
+					</div>
+					<div class="clear"></div>
+					<div class="padding">
+						<div class="text-fa">
+							<h2><a href="#">تست عنوان متن تست عنوان متن</a></h2>
+							<p id="txt">
+								تست متن تست متن تست متن تست متن تست متن تست متن تست متن تست متن تست متن تست متن تست متن تست متن تست متن تست متن تست متن تست متن تست متن تست متن تست متن تست متن تست متن تست متن تست متن  تست متن تست متن تست متن تست متن تست متن تست متن تست متن تست متن تست متن تست متن تست متن تست متن تست متن تست متن تست متن تست متن تست متن تست متن تست متن تست متن تست متن تست متن تست متن تست متن تست متن تست متن تست متن تست متن تست 
+							</p>
+							<p id="more"><a href="#">ادامه مطلب این متن</a></p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div><!-- ///// end home_main ///// -->
+		<div class="clear"></div>
+		<div class="product_main border">
+			<div class="product_container container">
+				<div class="product">
+					<div class="header">
+						<div class="left logo">
+							<img src="./images/page/logo.png" alt="#">
+						</div>
+						<div class="menu">
+							<ul>
+								<ul>
+								<li id="home-btn"><a href="#home">صفحه اصلی</a></li>
+								<li id="active" id="product-btn"><a href="#product">معرفی محصولات</a></li>
+								<li id="gallery-btn"><a href="#gallery">گالری عکس</a></li>
+								<li><a href="#draw">قرعه کشی</a></li>
+								<li><a href="#blog">وبلاگ</a></li>
+								<li id="contactus-btn"><a href="#contact us">تماس با ما</a></li>
+							</ul>
+							</ul>
+							<div class="clear"></div>
+						</div>
+					</div>
+					<div class="clear"></div>
+					<div class="padding">
+						<div class="text-fa">
+							<h2><a href="#">تست عنوان متن تست عنوان متن</a></h2>
+							<p id="txt">
+								تست متن تست متن تست متن تست متن تست متن تست متن تست متن تست متن تست متن تست متن تست متن تست متن تست متن تست متن تست متن تست متن تست متن تست متن تست متن تست متن تست متن تست متن تست متن تست متن تست متن تست متن تست متن تست متن تست متن تست متن تست متن تست متن تست متن تست متن تست متن تست متن تست متن تست متن تست متن تست متن تست متن تست متن تست متن تست متن تست متن تست متن 
+							</p>
+							<p id="more"><a href="#">ادامه مطلب این متن</a></p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div><!-- ///// end product_main ///// -->
+		<div class="clear"></div>
+		<div class="contactus_main border">
+			<div class="contactus_container container">
+				<div class="contactus">
+					<div class="header">
+						<?php include ("logo.php"); ?>
+						<div class="menu">
+							<ul>
+								<li id="home-btn"><a href="#home">صفحه اصلی</a></li>
+								<li id="product-btn"><a href="#product">معرفی محصولات</a></li>
+								<li id="gallery-btn"><a href="#gallery">گالری عکس</a></li>
+								<li><a href="#draw">قرعه کشی</a></li>
+								<li><a href="#blog">وبلاگ</a></li>
+								<li id="active" id="contactus-btn"><a href="#contact us">تماس با ما</a></li>
+							</ul>
+							<div class="clear"></div>
+						</div>
+					</div>
+					<div class="clear"></div>
+					<div class="padding">
+						<div class="slideshow">
+							<p>مکان قرارگیری فرم تماس با ما</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div><!-- ///// end contactus_main ///// -->
+		<div class="clear"></div>
+		<div class="gallery_main border">
+			<div class="gallery_container container">
+				<div class="gallery">
+					<div class="header">
+						<div class="left logo">
+							<img src="./images/page/logo.png" alt="#">
+						</div>
+						<div class="menu">
+							<ul>
+								<li id="home-btn"><a href="#home">صفحه اصلی</a></li>
+								<li id="product-btn"><a href="#product">معرفی محصولات</a></li>
+								<li id="active" id="gallery-btn"><a href="#gallery">گالری عکس</a></li>
+								<li><a href="#draw">قرعه کشی</a></li>
+								<li><a href="#blog">وبلاگ</a></li>
+								<li id="contactus-btn"><a href="#contact us">تماس با ما</a></li>
+							</ul>
+							<div class="clear"></div>
+						</div>
+					</div>
+					<div class="clear"></div>
+					<div class="padding">
+						<div class="slideshow">
+							<p>مکان قرارگیر اسلاید شو</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div><!-- ///// end gallery_main ///// -->
+
+
+
+
+
+
+
+
+
+
+	</div><!-- ///////////// end scroll ///////////// -->
+
+
+
+
+
+
+<!-- //////////////////////////////// Div Old-Browser(Notice in IE) //////////////////////////////// -->
+	<div class="old-browser">
+		<div class="close-old"></div>
+		<div id="old-browser">
+			<img src="./images/dont-use-ie(video).jpg" white="150" height="146">
+				<p>
+					ما هم اکنون متوجه شده ایم شما از مرورگر اینترنت اکسپلورر استفاده می کنید. متاسفانه این مرورگر استاندارد نمی باشد و دارای مشکلات امنیتی فراوانی هست.<br />
+					استفاده از این مرورگر ممکن است امنیت شما را به مخاطره بیاندازد، همچنین این وبسایت مطابق با این مرورگر طراحی و کدنویسی نشده است.<br />
+					جهت استفاده از تمام امکانات سایت لطفا از مرورگرهای استاندارد استفاده کنید. پیشنهاد ما استفاده از مرورگرهای زیر می باشد. جهت دانلود کلیک کنید.<br />
+					با این وجود شما مختار به استفاده از مرورگر دلخواه خود هستید. چنانچه فعلا تمایل به استفاده از مرورگرهای زیر ندارید، می توانید این پنجره با ببندید.
+				</p>
+			<ul>
+				<li id="chrome"><a href="http://www.google.com/intl/en/chrome/browser/" title="Google Chrome" target="_blank"></a></li>
+				<li id="firefox"><a href="http://www.mozilla.org/en-US/firefox/new/" title="Mozilla Firefox" target="_blank"></a></li>
+				<li id="opera"><a href="http://www.opera.com/download/" title="Opera" target="_blank"></a></li>
+				<div class="clear"></div>
+			</ul>
+		</div>
+	</div><!-- ////////////////////////// div.old-browser ////////////////////////// -->
+
+	<div class="overlay"></div>
+	<div class="bg-intro"></div>
+
+
+<!-- //////////////////////////////// script //////////////////////////////// -->
+	<!--[if lte IE 8]><script type="text/javascript" src="./js/stupid-ie.js"></script><![endif]-->
+	<!--[if lte IE 9]><script type="text/javascript" src="./js/stupid-ie_2.js"></script><![endif]-->
+	<script type="text/javascript" src="./js/jquery.easing.1.3.js"></script>
+	<script type="text/javascript" src="./js/jquery-ui.js"></script>
+	<script type="text/javascript" src="./js/lightbox.js"></script>
+	<script type="text/javascript" src="./js/jquery-ui-1.8.7.custom.min.js"></script>
+	<script type="text/javascript" src="./js/jquery.slideto.min.js"></script>
+	<script type="text/javascript" src="./js/my.js"></script>
+
+</body>
+</html>
