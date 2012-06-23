@@ -35,6 +35,12 @@ $(function () { /* /////////////////////////////////// Start Top jq ////////////
             }, 300);
         });
     });
+	$(".fa").click(function () {
+		$("body").animate({'top':'-700px','opacity':'1'},1000,'linear',function(){
+			$(".bg-intro").css('background-image','none');
+			window.location = 'pageFa.html';	
+		});
+	});
     $(".fa ,.en ,.about").mouseover(function () {
         top.find('p#' + $(this).attr("class")).css({
             'display': 'inline-block'
